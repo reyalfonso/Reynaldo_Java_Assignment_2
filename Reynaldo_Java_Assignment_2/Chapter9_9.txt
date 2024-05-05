@@ -1,0 +1,26 @@
+
+super.earnings():
+    -This code snippet invokes the earnings() method of the superclass from within an 
+     overridden earnings() method in a subclass.
+    -It allows the subclass to call the superclass's earnings() method and potentially 
+     augment or modify its behavior.
+    -This is often used in inheritance when you want to extend the functionality of the 
+     superclass's method while still utilizing its implementation.
+
+@Override:
+    -This annotation is used to indicate that a method in a subclass is overriding a method 
+     of its superclass.
+    -When a method is annotated with @Override, it tells the compiler to check whether the 
+     method is actually overriding a method in the superclass. If there is no corresponding method in the superclass, or if the method signature does not match exactly, the compiler will generate an error.
+    -Using @Override helps improve code readability and maintainability by explicitly 
+     indicating that a method is intended to override another method.
+
+super(firstArgument, secondArgument);:
+    -This code snippet invokes the superclass constructor from within a constructor of a subclass.
+    -It allows the subclass to initialize the inherited fields or perform any necessary setup that
+     is defined in the superclass constructor before executing its own constructor logic.
+    -The super() call must always be the first statement in the constructor's body if it is used,
+     and it provides arguments to the superclass constructor if required.
+    -This is commonly used when the subclass constructor needs to perform additional initialization
+     after the superclass constructor has executed.
+     
